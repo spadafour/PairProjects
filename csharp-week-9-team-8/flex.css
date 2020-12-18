@@ -1,0 +1,55 @@
+#nav-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-img {
+    display: flex;
+}
+
+#did-you-know {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#did-you-know-list {
+    align-self: center;
+    padding-left: 20px;
+}
+
+#get-refreshed {
+    display: flex;
+    justify-content: space-between;
+}
+
+#get-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-us{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    #did-you-know {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #did-you-know img {
+        padding:0px;
+        width: 100%;
+    }  
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="grid.css"/>
+    <link rel="stylesheet" href="flex.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <header id="title-img">
+            <img src="images/te-pops.png" />
+            <h1>Tech Elevator Popsicles</h1>
+        </header>
+
+        <header id="site-nav">
+            <ul id="nav-options">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </header>
+       
+            <section id="did-you-know">
+                <div id="contact-details">
+            <h2>Contact Us</h2>
+            <form method="POST" action="https://localhost:3000/api/MadeUp">
+                <div id="name-div">
+                    <label for="name">Name:</label>
+                    <div><input id="name" name="reservationName" type="text"/></div>    
+                </div>
+                <div>
+                    <label for="howDidYouHearOfUs">How did you hear of us?:</label>
+                    <div><select id="howDidYouHearOfUs" name="howDidYouHearOfUs"></div> 
+                    <option value="Popsicle-Monthly">Popsicle Monthly</option>
+                    <option value="Tech-Elevator-Website">Tech Elevator Website</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                  </select>
+                </div>
+                <div>
+                    <label for="color">What color is your favorite popsicle?:</label>
+                    <div><input id="color" name="color" value="#00afef" type="color"/></div>    
+                </div>
+                <div>
+                    <label for="comments">Please let us known any comments you have:</label>
+                    <div><textarea id="comments" rows="10" cols="70"></textarea></div>
+                </div>
+                <div>
+                    <a href="#" class="store-contact">Submit</a>
+                </div>
+            </form>
+        </div>
+        </section>
+       
+    <footer>
+        <p>&copy; Tech Elevator 2020 </p>
+    </footer>
+</body>
+</html>

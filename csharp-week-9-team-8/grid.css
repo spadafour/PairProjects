@@ -1,0 +1,109 @@
+@media only screen and (min-width: 800px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title-img site-nav"
+        "did-you-know did-you-know"
+        "popsicle-race get-refreshed"
+        "footer footer";
+        gap: 5px;
+    }
+
+    #title-img {
+        grid-area: title-img;
+        display: inline-block;
+    }
+    
+    #site-nav {
+        grid-area: site-nav;
+        display: inline-block;
+    }
+    
+    #did-you-know {
+        grid-area: did-you-know;
+        display: inline-block;
+    }
+    
+    #popsicle-race {
+        grid-area: popsicle-race;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+        "blue-pop pop-title"
+        "blue-pop pop-para";
+        gap: 5px;
+    }
+    
+    #pop-title {
+        grid-area: pop-title;
+    }
+    
+    #get-refreshed {
+        grid-area: get-refreshed;
+        display: inline-block;
+    }
+    
+    footer {
+        grid-area: footer;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .container {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    #site-nav {
+        margin-bottom: 10px;
+    }
+
+    #site-nav {
+        margin-bottom: 10px;
+    }
+
+    #did-you-know {
+        margin-bottom: 10px;
+    }
+
+    #popsicle-race {
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1 fr;
+        grid-template-areas:
+        "blue-pop  . pop-title ."
+        "pop-para pop-para pop-para pop-para";
+        gap: 5px;
+    }
+    
+    #pop-title {
+        grid-area: pop-title;
+        display: inline-block;
+        text-align: left;
+    }
+
+    #get-refreshed {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+
+#blue-pop {
+    grid-area: blue-pop;
+}
+
+#pop-title {
+    grid-area: pop-title;
+}
+
+#pop-para {
+    grid-area: pop-para;
+}
